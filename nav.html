@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        body{
+            background-color: aqua;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav img{
+            width: 120px;
+            height: 30px;
+            margin-right: 800px;
+        }
+        nav ul{
+            display: flex;
+            padding: 20px;
+            margin-left: -200px;
+        }
+        nav li{
+            list-style: none;
+            position: relative;
+        }
+        nav li a{
+            text-decoration: none;
+            padding: 20px 35px;
+            color: black;
+        }
+        nav li a.active,nav li a:hover{
+            color: plum;
+        }
+        nav li a.active::after,
+        nav li a:hover::after
+        {
+            content: "";
+            width: 50%;
+            height: 3px;
+            background-color: purple;
+            position: absolute;
+            bottom: -7px;
+            left: 28px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <img src="/Task-1/images/logo.svg" alt="">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Product</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" placeholder="First Name" name="firstname" id="firstname"> 
+        <label for="secondname">Second Name</label>
+        <input type="text" placeholder="Second Name" name="secondname" id="secondname">
+
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="abc@gmail.com">
+
+        <label for="dateOfBirth">DOB </label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth">
+        <span>Gender</span>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Other">Others</option>
+        </select> 
+
+        <label for="Create-Password">Create Password</label>
+        <input type="password" name="Create-Password" id="Create-Password">
+        <label for="Confirm-Password">Confrim Password</label>
+        <input type="password" name="Confirm-Password" id="Confirm-Password">
+        <br>    
+        <button type="submit" id="submit">Submit</button>
+         <button type="reset" id="reset">Reset</button>
+    </form>
+</body>
+</html>
